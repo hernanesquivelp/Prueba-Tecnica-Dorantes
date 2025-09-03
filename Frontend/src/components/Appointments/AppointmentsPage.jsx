@@ -30,7 +30,7 @@ const AppointmentsPage = () => {
     setEditingAppointment(null);
     setFormAppointment({
       dateTime: "",
-      status: 0, // 👈 Se reinicia el estado a 0
+      status: 0, //Se reinicia el estado a 0
       customerId: "",
     });
   };
@@ -47,7 +47,7 @@ const AppointmentsPage = () => {
     } else {
       setFormAppointment({
         dateTime: "",
-        status: 0, // 👈 Se establece el valor 0 para una nueva cita
+        status: 0, //Se establece el valor 0 para una nueva cita
         customerId: "",
       });
     }
@@ -115,7 +115,6 @@ const AppointmentsPage = () => {
     }
   };
 
-  // ... (El resto del código de DataTable y fetchFunctions es el mismo) ...
   // Objeto de mapeo para traducir los valores numéricos a texto
   const statusMap = {
     0: "Scheduled",
